@@ -1,0 +1,385 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.gradient-marginSuperior {
+    height: 70px; /* Ajusta el tamaño de la margen */
+    background: linear-gradient(to right, #DF3E3E, #A12E6F);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+.SAFI{
+    color: white;
+    font-family: 'Istok Web',sans-serif;
+    font-weight: 700;
+    margin: 0;
+    font-size: 45px;
+    margin-top: -2px;
+    margin-left: 25px;
+    position: fixed;
+    opacity: 0.8;
+}
+
+.InfoSafi{
+    color: white;
+    font-family: 'Jackquees Francois',sans-serif;
+    font-weight: 0;
+    margin: 0;
+    font-size: 12px;
+    margin-top: 48px;
+    margin-left: 28px;
+    position: fixed;
+    opacity: 0.5;
+}
+
+
+.Menu{
+    font-family: 'Inria Sans', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.MenuContainer ul li{
+    font-family: 'Inria Sans', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    list-style-type: none;
+    padding: 5px 0; /* Agrega algo de espacio entre los elementos */
+    color: rgb(250, 250, 250);
+} 
+
+.MenuContainer{
+    position: absolute;/* Fija la posición del menú dentro del div contenedor */
+    top: 20px;
+    right: 20px;
+    width: 150px;
+}
+
+.MenuContainer ul{
+    margin: 0;
+    padding: 0;
+}
+
+hr{
+    border: 0;
+    border-top: 1px transparent #000;
+    margin: 5px 0;
+}
+
+
+
+/*___________________________________________________________*/
+
+
+.gradiente-marginAuxiliarSuperior{
+    height: 70px;
+    background-color:  rgb(53, 48, 48);
+    margin-top: 30px;
+}
+
+
+.FoodSpaces{
+    position: absolute;
+    top: 50px;
+    left: -650px;
+}
+
+.FoodSpaces li:hover{
+    color: #ffff00;
+    cursor: pointer;
+}
+
+
+
+.Box{
+    position: absolute;
+    top: 50px;
+    left: -480px;
+}
+
+.Box li:hover {
+    color: #ffff00;
+    cursor: pointer;
+}
+
+
+
+
+.Book{
+    position: absolute;
+    top: 50px;
+    left: -300px;
+}
+
+.Book li:hover{
+    color: #ffff00;
+    cursor: pointer;
+}
+
+.Emergency{
+    position: absolute;
+    top: 50px;
+    left: -100px;
+}
+
+.Emergency li:hover{
+    color: #ffff00;
+    cursor: pointer;
+}
+
+.Home{
+    position: absolute;
+    top: 50px;
+    left: -770px;
+}
+
+.Home li:hover{
+    color: #ffff00;
+    cursor: pointer;
+}
+
+
+
+
+.LogOut{
+    position: absolute;
+    top: 50px;
+    left: 70px;
+}
+
+
+.LogOut li:hover {
+    color: #ffff00;
+    cursor: pointer;
+}
+
+
+
+
+/*___________________________________________________________*/
+
+
+.Diligenciacion{
+    padding: 20px;
+    text-align: left;
+    margin-left: 200px;
+    color: black;
+    font-family: 'Inria Sans', sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    margin-left: 205px;
+    /*padding-top: 20px;
+    padding-bottom: 80px;*/
+}
+
+
+.InfoPQRSF{
+    padding: 20px;
+    text-align: left;
+    margin-top: -40px;
+    margin-left: 208px;
+    font-family: 'Inria Sans', sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+}
+
+.InfoPQRSFAUX{
+    padding: 20px;
+    text-align: left;
+    margin-top: -40px;
+    margin-left: 208px;
+    font-family: 'Inria Sans', sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+}
+
+.ImageUpb{
+    width: 16px;
+    height: auto;
+    position: absolute;
+    top: 130px;
+    left: 20px;
+}
+
+.ImageUpb img{
+    width: 1250%;
+    display: block;
+}
+/*___________________________________________________________*/
+
+.EmergencyText{
+    padding: 20px;
+    text-align: left;
+    margin-left: 220px;
+    margin-top: 10px;
+    color: black;
+    font-family: 'Inria Sans', sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.ContenedorDeDescripcion{
+    padding: 20px;
+    text-align: left;
+    margin-top: -40px;
+    margin-left: 220px;
+    font-family: 'Inria Sans', sans-serif;
+    font-weight: 500;
+    font-size: medium;
+}
+
+
+.InputTipoDeDocumento{
+    font-family: 'Inria Sans', sans-serif;
+    font-weight: 100;
+    font-size: 20px;
+    margin-top: -320px;
+    margin-left: 60px;
+}
+
+.documentTypeSelect{
+    width: 300px; /* Ancho del selector */
+    height: 32px; /* Altura del selector */
+    padding: 10px; /* Espacio interno del selector */
+    border: 2px transparent ; /* Color y tamaño del borde */
+    border-radius: 18px; /* Curvatura de los bordes */
+    font-family: 'Inria Sans', sans-serif; /* Fuente del texto */
+    font-size: 10px; /* Tamaño de la fuente */
+    background-color: #f4f4f4; /* Color de fondo */
+    color: black; /* Color del texto */
+    margin-left: 50px;
+}
+
+.contenedorDocumento{
+    max-width: 0px;
+    padding: 20px;
+    font-family: 'Inria Sans', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    margin-top: 0px;
+    margin-left: 40px;
+}
+
+
+.custom-field1{
+    width: 300px;
+    height: 25px;
+    padding: 10px;
+    margin-bottom: 25px;
+    border: 20px transparent;
+    font-family: 'Inria Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: #f4f4f4;
+    border-radius: 20px;
+    margin-top: 12px;
+}
+
+
+.InputCorreoElectronico{
+    font-family: 'Inria Sans', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    margin-top: -20px;
+    margin-left: 65px;
+}
+
+
+.contenedorCorreoElectronico{
+    margin-top: 10px;
+    margin-left: 65px;
+}
+
+.custom-field2{
+    width: 300px;
+    height: 30px;
+    padding: 10px;
+    border: 20px transparent;
+    font-family: 'Inria Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    background-color: #f4f4f4;
+    border-radius: 20px;
+}
+
+.video{
+    margin-left: 950px;
+    margin-top: 20px;
+}
+
+.videoBloc{
+    display: inline-block;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+iframe {
+    display: block;
+    border: none;  /* Eliminar cualquier borde del iframe */
+}
+
+.People{
+    margin-left: 960px;
+    font-family: 'Jomhuria', sans-serif;
+    font-size: 30px;
+    margin-top: 10px;
+}
+
+.message{
+    margin-left: 960px;
+    font-family: 'Jomhuria', sans-serif;
+    font-size: 30px;
+    margin-top: -10px;
+}
+
+/*___________________________________________________________*/
+
+
+.ImageBotom img {
+    width: 200px; /* Ajusta el ancho según lo que necesites */
+    height: auto; /* Mantener la proporción de la imagen */
+    margin-left: 500px;
+    margin-top: -190px;
+    cursor: pointer;
+}
+
+
+
+
+
+/*___________________________________________________________*/
+
+.gradient-marginInferior {
+    height: 50px; /* Ajusta el tamaño de la margen */
+    background: linear-gradient(to right, #DF3E3E, #A12E6F);
+    position: fixed; /* Fija el div en la parte inferior*/
+    bottom: 0; /* Coloca el div en el limite inferior*/
+    left: 0; /*Distancia respecto al lado izquierdo*/
+    width: 100%; /* Se extiende por toda la anchura de la pagina*/ 
+    z-index: 100; /*Asegura que siempre este encima del contenido*/
+}
+
+.text{
+    color: white;
+    font-family: 'Inter',sans-serif;
+    font-weight: 700;
+    margin: 0;
+    font-size: 12px;
+    margin-top: 16px;
+    margin-left: 12px;
+    position: fixed;
+    opacity: 0.9;
+}
+
+

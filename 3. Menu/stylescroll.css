@@ -1,0 +1,137 @@
+/* Contenedor principal con scroll horizontal */
+.horizontal-scroll {
+    width: 50%; /* Ancho del contenedor visible */
+    overflow-x: auto; /* Activa el scroll horizontal */
+    white-space: nowrap; /* Evita que los elementos se vayan a una nueva línea */
+    padding: 10px;
+    border: 0px transparent #ccc; /* Solo para visualización */
+    box-sizing: border-box;
+    margin-top: 90px;
+    margin-left: 50px;
+    border-radius: 20px;
+}
+
+/* Elementos dentro del scroll */
+.scroll-content {
+    display: inline-block; /* Los elementos no se romperán en nuevas líneas */
+}
+
+.item {
+    display: inline-block;
+    width: 400px; /* Ancho de cada elemento */
+    height: 200px; /* Altura de cada elemento */
+    background-color: #f0f0f0;
+    color: rgb(235, 235, 235);
+    margin-right: 10px;
+    line-height: 210px;
+    font-size: 20px;
+    border-radius: 20px;
+    align-items: flex-end ;
+}
+
+.item1{
+    background-image: url('../1. Images/campestre.jpg');
+    background-size: cover;
+    background-position: center;
+    font-family: 'Inria Sans', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    background-color: #f4f4f4;
+    cursor: pointer;
+}
+
+.item2{
+    background-image: url('../1. Images/cafetaria-A.jpg');
+    background-size: cover;
+    background-position: center;
+    font-family: 'Inria Sans', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    background-color: #f4f4f4;
+    cursor: pointer;
+}
+
+.item3{
+    background-image: url('../1. Images/cafeteria-K.jpg');
+    background-size: cover;
+    background-position: center;
+    font-family: 'Inria Sans', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    background-color: #f4f4f4;
+    cursor: pointer;
+}
+
+.item4{
+    background-image: url('../1. Images/campestre.jpg');
+    background-size: cover;
+    background-position: center;
+    font-family: 'Inria Sans', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    background-color: #f4f4f4;
+    cursor: pointer;
+}
+
+.item5{
+    background-image: url('../1. Images/cafetaria-A.jpg');
+    background-size: cover;
+    background-position: center;
+    font-family: 'Inria Sans', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    background-color: #f4f4f4;
+    cursor: pointer;
+}
+
+.item6{
+    background-image: url('../1. Images/cafeteria-K.jpg');
+    background-size: cover;
+    background-position: center;
+    font-family: 'Inria Sans', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    background-color: #f4f4f4;
+    cursor: pointer;
+}
+
+.item7{
+    background-image: url('../1. Images/campestre.jpg');
+    background-size: cover;
+    background-position: center;
+    font-family: 'Inria Sans', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    background-color: #f4f4f4;
+    cursor: pointer;
+}
+
+.item8{
+    background-image: url('../1. Images/cafetaria-A.jpg');
+    background-size: cover;
+    background-position: center;
+    font-family: 'Inria Sans', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    background-color: #f4f4f4;
+    cursor: pointer;
+}
+
+
+/**VIDEO*/
+.video{
+    margin-left: 900px;
+    margin-top: -300px;
+}
+
+.videoBloc{
+    display: inline-block;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+
+iframe {
+    display: block;
+    border: none;  /* Eliminar cualquier borde del iframe */
+}

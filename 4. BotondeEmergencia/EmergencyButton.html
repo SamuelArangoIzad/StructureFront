@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Istok+Web:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jackquees+Francois:wght@400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inria+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jomhuria&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+    
+
+    <title>EmergencyBotom</title>
+    <link rel="stylesheet" href="styleemergency.css">
+</head>
+<body>
+
+    <div class = "gradient-marginSuperior">
+        <p class="SAFI">SAFI</p>
+        <p class="InfoSafi">Sistema de Acompañamiento para la Formación Integral</p>
+
+        <details class="MenuContainer">
+            <summary class="Menu">Menú</summary>
+            <hr>
+            <ul>
+                <div id="FoodSpaces" class="FoodSpaces">
+                <li>Food Spaces</li>
+                <hr>
+                </div>
+
+                <div id="Box" class="Box">
+                <li>Suggestion Box</li>
+                <hr>
+                </div>
+
+                <div id="Book" class="Book">
+                <li>Book/Appointment</li>
+                <hr>
+                
+                </div>
+                <div id="Emergency" class="Emergency">
+                <li>Emergency Button</li>
+                <hr>
+
+                </div>
+                <div id="Home" class="Home">
+                <li>Home</li>
+                <hr>
+                </div>
+
+                <div id="logoutItem" class="LogOut">
+                <li>Log Out</li>
+                <hr>
+                </div>
+
+                <script src="../RedirectTest.js"></script>
+            </ul>
+        </details>
+
+
+    </div>
+    
+    <div class = "gradiente-marginAuxiliarSuperior"></div>
+
+
+
+     <div class="EmergencyText">Te sientes mal, no estás en tu momento?</div>
+
+     <div class= "ImageUpb">
+        <img src="../1. Images/upbImage.png" alt="UPB Image">
+     </div>
+
+
+     <div class="ContenedorDeDescripcion">
+        <p class="PrimerParrafo">Mediante este botón podrás tener atención directa con uno de nuestros profesionales </p>
+        <p class="SegundoParrafo">SAFI los cuales se comunicaran contigo de la forma más pronta posible</p>
+     </div>
+
+
+     <div class="video" id="videoYB">
+        <div class="videoBloc">
+            <iframe width="400" height="250" 
+            src="https://www.youtube.com/embed/kcfs1-ryKWE?autoplay=1&loop=1&playlist=kcfs1-ryKWE"
+             title="YouTube video player" frameborder="0" 
+             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; 
+             picture-in-picture;" referrerpolicy allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <div class="People">
+        Eres un miembro importante e indispensable 
+    </div>
+
+    <div class="message">
+        de nuestra institución
+    </div>
+    
+
+<!-- Selección del tipo de documento -->
+<div class="InputTipoDeDocumento">Tipo de Documento</div>
+<div class="documentTypeContainer">
+    <label for="documentTypeLabel"></label>
+    <select id="field3" name="documentType" class="documentTypeSelect" required>
+        <option value="cc">C.C (Cédula de Ciudadanía)</option>
+        <option value="ti">T.I (Tarjeta de Identidad)</option>
+        <option value="ce">C.E (Cédula de Extranjería)</option>
+    </select>
+</div>
+
+
+<!-- Campo para ingresar el documento -->
+<div class="contenedorDocumento">
+    <label for="field1">Documento</label>
+    <input type="text" id="field1" name="documento" class="custom-field1" required>
+</div>
+
+<!-- Campo para ingresar el correo electrónico -->
+<div class="InputCorreoElectronico">Correo Electrónico</div>
+<div class="contenedorCorreoElectronico">
+    <input type="email" id="field2" name="correo" class="custom-field2" required>
+</div>
+
+
+<div class="ImageBotom">
+    <img id="imageButton" src="../1. Images/botomImage.png" alt="Botom Image">
+</div>
+
+     <script src="SendEmail.js"></script>
+
+
+    <div class="gradient-marginInferior">
+        <p class="text">Todos los derechos reservados | Seccional Bucaramanga</p>
+    </div>
+    
+</body>
+</html>

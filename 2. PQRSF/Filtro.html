@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Istok+Web:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jackquees+Francois:wght@400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inria+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <title>PQRSF</title>
+    <link rel="stylesheet" href="stylefiltro.css">
+</head>
+<body>
+
+    <div class = "gradient-marginSuperior">
+        <p class="SAFI">SAFI</p>
+        <p class="InfoSafi">Sistema de Acompañamiento para la Formación Integral</p>
+
+        <details class="MenuContainer">
+            <summary class="Menu">Menú</summary>
+            <hr>
+            <ul>
+                <div id="FoodSpaces" class="FoodSpaces">
+                <li>Food Spaces</li>
+                <hr>
+                </div>
+
+                <div id="Box" class="Box">
+                <li>Suggestion Box</li>
+                <hr>
+                </div>
+
+                <div id="Book" class="Book">
+                <li>Book/Appointment</li>
+                <hr>
+                
+                </div>
+                <div id="Emergency" class="Emergency">
+                <li>Emergency Button</li>
+                <hr>
+
+                </div>
+                <div id="Home" class="Home">
+                <li>Home</li>
+                <hr>
+                </div>
+
+                <div id="logoutItem" class="LogOut">
+                <li>Log Out</li>
+                <hr>
+                </div>
+
+                <script src="../RedirectTest.js"></script>
+            </ul>
+        </details>
+    </div>
+    
+    <div class = "gradiente-marginAuxiliarSuperior"></div>
+
+
+     <div class="GestionPQRSF">Gestión PQRSF</div>
+     <div class="InfoPQRSF">Peticiones, Quejas, Reclamos, Solicitudes, Felicitaciones</div>
+
+     <div class= "ImageUpb">
+        <img src="../1. Images/upbImage.png" alt="UPB Image">
+     </div>
+
+
+     <div class="ContenedorDeDescripcion">
+        <p class="PrimerParrafo">¡Bienvenido a nuestro portal! Por favor completa los campos requeridos. Una vez que hayas ingresado la </p>
+        <p class="SegundoParrafo">información, procederemos con la verificación, lo que te permitirá realizar tus solicitudes universitarias de manera </p>
+        <p class="TercerParrafo">segura. Tu información será tratada con las más estrictas medidas de seguridad y de acuerdo con nuestra política de </p>
+        <p class="CuartoParrafo">protección de datos.</p>
+     </div>
+
+
+     <div class="contenedorDocumento">
+        <label for="field1">Documento</label>
+        <input type="text" id="field1" class="custom-field1" > <!--placeholder="Escribe aquí... para que en el recuadro salga escribe aqui-->
+     </div>
+
+     <div class="InputCorreoElectronico">Correo Electronico</div>
+     <div class="contenedorCorreoElectronico">
+        <input type="text" id="field2" class="custom-field2" > <!--placeholder="Escribe aquí... para que en el recuadro salga escribe aqui-->
+     </div>
+
+     <div class="InputConfirmarCorreo">Confirmar Correo Electronico</div>
+     <div class="contenedorconfirmarcorreoelectronico">
+        <input type="text" id="field3" class="custom-field3" > <!--placeholder="Escribe aquí... para que en el recuadro salga escribe aqui-->
+     </div>
+
+     <div class="InputTipoDeDocumento">Tipo de Documento</div>
+     <div class="documentTypeContainer">
+        <label for="documentType"></label>
+        <select id="documentType" class="documentTypeSelect">
+            <option value="cc">C.C (Cédula de Ciudadanía)</option>
+            <option value="ti">T.I (Tarjeta de Identidad)</option>
+            <option value="ce">C.E (Cédula de Extranjería)</option>
+        </select>
+    </div>
+
+    <button class="confirm" id="verifyButton">
+        Verificar
+    </button>
+
+
+    <div id="error-message" 
+    style="color: rgb(124, 65, 65); font-weight: bold; margin-left: 65px; margin-top: 10px;
+    font-family: 'Inria Sans', sans-serif; opacity: 0.5;">
+    </div>
+    <script src="VerifyEmail.js"></script> <!--  a-emailVerify -->
+
+
+     <div class="PeopleImage">
+        <img src="../1. Images/peopleImage.png" alt="People Image"class=" borderPeople">
+     </div>
+
+
+    <div class="gradient-marginInferior">
+        <p class="text">Todos los derechos reservados | Seccional Bucaramanga</p>
+    </div>
+
+</body>
+</html>

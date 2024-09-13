@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Istok+Web:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jackquees+Francois:wght@400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inria+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <title>Formulario PQRSF</title>
+    <title>PQRSF</title>
+    <link rel="stylesheet" href="stylediligenciacion.css">
+</head>
+<body>
+
+    <div class = "gradient-marginSuperior">
+        <p class="SAFI">SAFI</p>
+        <p class="InfoSafi">Sistema de Acompañamiento para la Formación Integral</p>
+
+        <details class="MenuContainer">
+            <summary class="Menu">Menú</summary>
+            <hr>
+            <ul>
+                <div id="spaces" class="FoodSpaces">
+                    <li>Food Spaces</li>
+                    <hr>
+                    </div>
+    
+                    <div id="Box" class="Box">
+                    <li>Suggestion Box</li>
+                    <hr>
+                    </div>
+    
+                    <div id="Book" class="Book">
+                    <li>Book/Appointment</li>
+                    <hr>
+                    
+                    </div>
+                    <div id="Emergency" class="Emergency">
+                    <li>Emergency Button</li>
+                    <hr>
+    
+                    </div>
+                    <div id="Home" class="Home">
+                    <li>Home</li>
+                    <hr>
+                    </div>
+    
+                    <div id="logoutItem" class="LogOut">
+                    <li>Log Out</li>
+                    <hr>
+                    </div>
+
+                    <script src="../RedirectTest.js"></script>
+            </ul>
+        </details>
+
+
+    </div>
+    
+    <div class = "gradiente-marginAuxiliarSuperior"></div>
+
+
+     <div class="Diligenciacion">Diligención</div>
+     <div class="InfoPQRSF"> Tu opinión es muy importante para nosotros tomate tu tiempo y dinos tus quejas.</div>
+     <div class="InfoPQRSFAUX">Por favor diligencia los campos del formulario</div>
+
+     <div class= "ImageUpb">
+        <img src="../1. Images/upbImage.png" alt="UPB Image">
+     </div>
+
+
+     <form id="pqrsfForm">
+        <div class="nombreCompleto">Nombre Completo</div>
+        <div class="contenedorNombre">
+            <input type="text" name="from_name" id="field1" class="custom-field1" required>
+        </div>
+    
+        <div class="InputTipoDeDocumento">Tipo de Documento</div>
+        <div class="documentTypeContainer">
+            <select name="document_type" id="documentType" class="documentTypeSelect" required>
+                <option value="cc">C.C (Cédula de Ciudadanía)</option>
+                <option value="ti">T.I (Tarjeta de Identidad)</option>
+                <option value="ce">C.E (Cédula de Extranjería)</option>
+            </select>
+        </div>
+
+
+        <div class="DocumentoDeIdentidad">Documento de Identidad</div>
+        <div class="ContenedorDocumento">
+            <input type="text" name="document_id" id="field2" class="custom-field2" required>
+        </div>
+
+
+        <div class="CelularIdentificador">Celular</div>
+        <div class="ContenedorCelular">
+            <input type="text" name="cellular" id="field3" class="custom-field3" required>
+        </div>
+
+        <div class="CorreoInstitucional">Correo Institucional</div>
+        <div class="ContenedorCorreoInstitucional">
+            <input type="text" name="email" id="field4" class="custom-field4" required>
+        </div>
+
+
+    
+        <div class="InputMotivoPQRSF">Motivo PQRSF</div>
+        <div class="ContainerMotivo">
+            <select name="motivo" id="motivoTipe" class="MotivoTypeSelect" required>
+                <option value="Peticiones">Peticiones</option>
+                <option value="queja">Queja</option>
+                <option value="reclamo">Reclamo</option>
+                <option value="solicitud">Solicitud</option>
+                <option value="felicitaciones">Felicitar</option>
+            </select>
+        </div>
+
+   
+        <div class="MedioDeComunicacion">Medio para recibir la respuesta</div>
+        <div class="radio-container1">
+            <label for="option1" class="radio-label1">
+                <input type="radio" id="option1" name="response_method" value="Celular" required>
+                Celular
+            </label>
+            <label for="option2" class="radio-label1">
+                <input type="radio" id="option2" name="response_method" value="Correo Institucional" required>
+                Correo Institucional
+            </label>
+        </div>
+
+
+  
+  
+        <div class="AutorizaElTratamientoDeDatos">Autoriza el tratamiento de datos</div>
+        <div class="radio-container2">
+            <label for="option3" class="radio-label2">
+                <input type="radio" id="option3" name="data_authorization" value="SI" required>
+                SI
+            </label>
+            <label for="option4" class="radio-label2">
+                <input type="radio" id="option4" name="data_authorization" value="NO" required>
+                NO
+            </label>
+        </div>
+
+
+        <div class="CuadroDeQueja">Descripción</div>
+        <div class="text-container">
+            <textarea name="description" id="textBox" rows="5" cols="50" placeholder="Escribe aquí..." required></textarea>
+            <p id="wordCount">0 / 200 palabras</p>
+        </div>
+
+
+        <div class="enviar">
+            <input type="submit" class="enviarOpinion" id="submitButton" value="Enviar">
+        </div>
+    </form>
+
+    <script src="WordAmount.js"></script><!-- b-szendopinion-->
+    <script src="EmailJS.js"></script> <!--   b-szendemailpq-->
+
+
+    <div class="gradient-marginInferior">
+        <p class="text">Todos los derechos reservados | Seccional Bucaramanga</p>
+    </div>
+    
+</body>
+</html>
