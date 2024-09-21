@@ -1,0 +1,39 @@
+.photoid1 {
+    margin-left: 50px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 100;
+    margin-top: -20px; /* Ajusta este valor para pegar más el div */
+    font-size: 12px;
+    display: flex;
+    cursor: pointer;
+}
+
+.photoid2{
+    margin-left: 350px;
+    font-family: 'Inter',sans-serif;
+    font-weight: 100;
+    margin-top: -10px; /* Ajusta este valor para pegar más el div */
+    font-size: 12px;
+    display: flex;
+    cursor: pointer;
+}
+
+.photoid3{
+    margin-left: 1260px;
+    margin-top: -30px;
+    font-family: 'Inter',sans-serif;
+    font-weight: 100;
+    font-size: 12px;
+    display: flex;
+    cursor: pointer;
+}
+
+.thumbnail2 {
+    width: 200px;
+    height: auto;
+}
+
+.thumbnail {
+    width: 200px; /* Ajusta el tamaño según tus necesidades */
+    height: auto;
+}

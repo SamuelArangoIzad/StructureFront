@@ -8,15 +8,42 @@ document.getElementById('imageButton').addEventListener('click', function() {
     const documentTypeSelect = document.getElementById('field3').value;
     const documentNumber = document.getElementById('field1').value;
 
-    // Expresión regular para validar que el correo termine en @upb.edu.co
-    const emailRegex = /^[^\s@]+@upb\.edu\.co$/;
+
+
+    // Función para validar que el correo termine en @upb.edu.co
+    function validateInstitucionalEmail(correo) {
+        const regex = /^[^\s@]+@upb\.edu\.co$/;
+        return regex.test(correo);
+    }
+
+    function validarcampodocumento(documento) {
+        // Verificar si el valor del campo es una cadena no vacía
+        return documento.trim() !== '';
+    }
+
+
+    const errorMessageElement = document.getElementById('error-message');
+    errorMessageElement.textContent = '';
+
+
+    // Verificar si el campo de documento tiene información
+    if (!validarcampodocumento(documentNumber)) {
+        // Mostrar el mensaje de error en la página
+        errorMessageElement.textContent = 'El campo del documento debe tener información';
+        // Si es necesario detener el procesamiento, usa `return` aquí.
+        return;
+    }  
 
     // Verificar si el correo es válido
-    if (!emailRegex.test(emailField)) {
-        // Si el correo no es válido, mostrar el mensaje de error en una alerta
-        alert('El correo institucional debe tener el dominio @upb.edu.co.');
-        return; // No continuar si el correo no es válido
+    if (!validateInstitucionalEmail(emailField)) {
+        // Mostrar el mensaje de error en la página
+        errorMessageElement.textContent = 'El correo institucional debe tener el dominio @upb.edu.co';
+        // Si es necesario detener el procesamiento, usa `return` aquí.
+        return;
     }
+
+
+
 
     // Crear el objeto con los parámetros que se enviarán a EmailJS
     const emailParams = {

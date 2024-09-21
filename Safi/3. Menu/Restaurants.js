@@ -1,5 +1,3 @@
-
-
 //1
 document.getElementById('BloqueACavamar').addEventListener('click', function() {
     window.location.href = 'BloqueACavamar.html';
@@ -52,8 +50,3 @@ document.getElementById('BloqueJEatbox').addEventListener('click', function() {
 document.getElementById('BloqueLEspacioLibre').addEventListener('click', function() {
     window.location.href = 'BloqueLEspacioLibre.html';
  });
-
-
-
-
-

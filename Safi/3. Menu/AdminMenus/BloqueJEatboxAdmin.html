@@ -10,7 +10,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Inria+Sans:wght@300;400;700&display=swap" rel="stylesheet">
 
   
-    <link rel="stylesheet" href="styleupb.css">
+    <link rel="stylesheet" href="../styleupb.css">
+    <link rel="stylesheet" href="editStyle.css">
     <title>Menu</title>
    </head>
    <body>
@@ -55,7 +56,7 @@
               </div>
 
               <!-- <script src="Redirect.js"></script> -->
-              <script src="../RedirectTest.js"></script>
+              <script src="../../RedirectTest.js"></script>
           </ul>
       </details>
    </div>
@@ -67,12 +68,12 @@
  
 
    <div class= "ImageUpb">
-    <img src="../1. Images/upbImage.png" alt="UPB Image">
+    <img src="../../1. Images/upbImage.png" alt="UPB Image">
    </div>
 
 
    <div class="Espaciosdecomida">
-    Bloque A-Cavamar
+    Bloque J-Eatbox
    </div>
    <div class="Info">Descubre los variados espacios de comidas, diseñados para satisfacer todos los gustos y necesidades dietéticas.</div>
    <!-- <div class="Descripcion">Entrando por porteria a la izquierda</div> -->
@@ -90,22 +91,31 @@
     </div>
   </div>
 
-  <div class="Contactar">Contactar</div>
 
-  <!-- Primera imagen -->
-<div class="Imagen1" id="Imagen1BloqueJEatbpx">
-  <a href="https://i.pinimg.com/originals/80/02/ca/8002ca13580b405dd00b006cb7e08280.jpg" target="_blank">
-    <img src="https://i.pinimg.com/originals/80/02/ca/8002ca13580b405dd00b006cb7e08280.jpg" alt="Imagen" class="thumbnail">
+
+<!-- Primera imagen -->
+<div class="Imagen1" id="Imagen1BloqueJEatbox">
+  <a href="#" id="imagenLink1BloqueJEatbox" download>
+    <img src="https://i.pinimg.com/originals/80/02/ca/8002ca13580b405dd00b006cb7e08280.jpg" 
+         alt="Imagen" class="thumbnail" id="imagenActualBloqueJEatbox1">
   </a>
 </div>
+
+<!-- Botón para editar la primera imagen -->
+<div class="photoid1" id="photoid1" onclick="seleccionarImagen1BloqueJEatbox()">Editar</div>
+<!-- Botón para editar la segunda imagen -->
+<div class="photoid2" id="photoid2" onclick="seleccionarImagen2BloqueJEatbox()">Editar</div>
+
 
 <!-- Segunda imagen -->
 <div class="Imagen2" id="Imagen2BloqueJEatbox">  
-  <a href="https://img.freepik.com/vector-gratis/formato-vertical-menu-restaurante-digital_52683-46329.jpg" target="_blank">
-    <img src="https://img.freepik.com/vector-gratis/formato-vertical-menu-restaurante-digital_52683-46329.jpg" alt="Imagen2" class="thumbnail2">
+  <a href="#" id="imagenLink2BloqueJEatbox" download>
+    <img src="https://img.freepik.com/vector-gratis/formato-vertical-menu-restaurante-digital_52683-46329.jpg" 
+         alt="Imagen2" class="thumbnail2" id="imagenActualBloqueJEatbox2">
   </a>
 </div>
 
+<script src="changeImageJEatbox.js"></script>
 
 
    <div class="gradient-marginInferior">

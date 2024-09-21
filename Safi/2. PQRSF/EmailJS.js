@@ -44,6 +44,7 @@ function validateInstitutionalEmail(email) {
 // Verificar los campos y enviar el formulario
 document.getElementById('pqrsfForm').addEventListener('submit', function(event) {
     event.preventDefault();
+    
 
     const field1 = document.getElementById('field1').value.trim();
     const field2 = document.getElementById('field2').value.trim();
@@ -52,17 +53,25 @@ document.getElementById('pqrsfForm').addEventListener('submit', function(event) 
     const motivoTipe = document.getElementById('motivoTipe').value;
     const textBox = document.getElementById('textBox').value.trim();
 
-    // Validar el número de celular
-    if (!validatePhoneNumber(field3)) {
-        alert('El campo Celular debe contener números minimanete 10 para podernos contactar.');
+
+    const errorMessageElement = document.getElementById('error-message');
+    errorMessageElement.textContent = ''; 
+
+    //Validad numero de telefono
+    const phoneRegex = /^\d{10,}$/;
+    if (!phoneRegex.test(field3)) {
+        errorMessageElement.textContent = 'El campo Celular debe contener al menos 10 números para que podamos contactarte.';
         return;
     }
 
+
     // Validar el correo institucional
-    if (!validateInstitutionalEmail(field4)) {
-        alert('El correo institucional debe tener el dominio @upb.edu.co.');
+    if(!validateInstitutionalEmail(field4)){
+        errorMessageElement.textContent = 'El correo institucional debe tener el dominio @upb.edu.co';
         return;
     }
+
+    
 
     const btn = document.getElementById('submitButton');
     btn.value = 'Enviando...';
